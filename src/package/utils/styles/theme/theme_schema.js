@@ -40,6 +40,7 @@ export const THEME_SCHEMA = yup.object({
                 {}
             )
         )
+    // eslint-disable-next-line
     ),
     miscellaneous: yup.object({
         backgroundColor: isHex.required(),

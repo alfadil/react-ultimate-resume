@@ -61,6 +61,7 @@ const SelectComponent = ({
                             }
                         }
                     })
+                // eslint-disable-next-line
                 )}
             </Menu>
             <ClickableTextField

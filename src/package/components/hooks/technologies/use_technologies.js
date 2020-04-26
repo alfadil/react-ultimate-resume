@@ -27,6 +27,7 @@ export const useTechnologies = () => {
                 })
                 .then((fetchedTechnologies) =>
                     dispatch({ type: TECHNOLOGIES_RECEIVED, technologies: fetchedTechnologies })
+                // eslint-disable-next-line
                 )
                 .catch((e) => {
                     console.error('Failed to fetch technologies', e);

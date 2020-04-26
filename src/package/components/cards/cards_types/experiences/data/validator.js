@@ -63,6 +63,7 @@ export const WorkValidator = (formatMessage) =>
                                         }
                                         return moment(value).isSameOrAfter(start);
                                     })
+                            // eslint-disable-next-line
                             )
                         })
                     })

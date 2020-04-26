@@ -71,6 +71,7 @@ const ProfileCardComponent = ({
             variant,
             side: sideProps || SIDES.FRONT
         })
+    // eslint-disable-next-line
     );
     const { side, hasDialogOpened } = state;
 

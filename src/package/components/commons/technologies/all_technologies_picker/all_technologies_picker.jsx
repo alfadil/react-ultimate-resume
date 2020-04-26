@@ -99,6 +99,7 @@ const AllTechnologiesPickerComponent = ({ selectedItems, onAdd, onDelete, classe
                 })
                 .filter(({ name, tags }) =>
                     [...(tags ?? []), name].some((value) => value.toLowerCase().includes(debouncedQuery.toLowerCase()))
+                    // eslint-disable-next-line
                 )
                 .slice(0, 35),
         [technologies, debouncedQuery, onlySelected]

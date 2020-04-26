@@ -58,6 +58,7 @@ const Content = ({ data, handleAddButtonClick, classes }) => {
         () =>
             Array.from({ length: data.languages?.length ?? 0 }, (v, k) =>
                 chroma.mix(backColor, backBackgroundColor, (2 * k) / 15).hex()
+            // eslint-disable-next-line
             ),
         [backColor, backBackgroundColor]
     );

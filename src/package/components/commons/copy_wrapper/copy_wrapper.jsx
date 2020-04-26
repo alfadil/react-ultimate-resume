@@ -26,6 +26,7 @@ const CopyWrapperComponent = ({ value, children }) => {
                     ...child.props,
                     onClick: mergeOnClicks(handleCopyToClipboardClick, child.props.onClick)
                 })
+            // eslint-disable-next-line
             )}
             <Portal>
                 <Snackbar
